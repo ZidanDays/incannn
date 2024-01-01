@@ -79,7 +79,9 @@ async function sendLocationToServer(latitude, longitude, nama) {
 
 // Fungsi untuk mengambil absen
 async function ambilAbsen() {
-  const labels = ['intan', 'mario', 'onal', 'zidan'];
+  const labels = ['intan', 'mario', 'onal', 'zidan', 'Agustinus', 'Detty Sekoh', 
+  'Fanny Engka', 'Hengkie Kojongian', 'Jemry Langie', 'Jhonly Rumondor', 'Martinova Wenas',
+  'Miss Kusoy', 'Okni', 'Revly P', 'Sefer Lumolos', 'Seska Sumakul', 'Yeyne Tumewu', 'Yunita Terok'];
   const labeledFaceDescriptors = await getLabeledFaceDescriptions(labels);
   const faceMatcher = new faceapi.FaceMatcher(labeledFaceDescriptors);
 
